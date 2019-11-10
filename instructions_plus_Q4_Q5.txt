@@ -1,0 +1,26 @@
+4. This test is very static due to the time restrain but could have been easily improved by confirming multiple elements on the page and checking to see if they're working as intended. The test only covers basic smoke and sanity testing not full regression. The test is also only done on a single platform (Chrome - Desktop) when it could have been implemented for multiple platforms. No Whitebox testing is being done on the code in this test, only Blackbox testing.
+
+5.
+Other tests that can be done for a full regression.
+	• Currently only checking to see that the intended elements are present on page when in full regression you'd want to confirm all elements are present and functional as intended.
+	• In order of importance I would want to check if the main website loads completely or some elements not visible/present.
+	• Confirm that the website doesn't load for too long (preferably < ~30secs)
+	• Check if all elements are present on page and user is able to interact with them. Then I would check to see if all the other pages load as intended.
+	• Confirm that the search engine is returning the intended search query and is done so in a reasonable timeframe.
+	• The search results are filtered and arranged according to the users selection.
+	• User is able to select all options and is able to select hotel, book a room, and pay for room.
+	• Confirm if user is able to do all of the above on all available platform that the company supports; if not user should be notified to switch to a different platform.
+	• User should be able to receive requested information such as receipts and promotional emails.
+	• More in-depth Whitebox testing should be done on the code to confirm optimal performance.
+	• A better understanding of the algorithm can give more insight into better testing practices.
+	
+	• Stress tests can be done on top to make sure all possiblitites are considered
+
+Instruction on running the python file:
+In the repo/zip folder chromedriver (for Chrome v.78) is provided if that’s not compatible with your chrome browser then please make sure to get a compatible one online
+(https://sites.google.com/a/chromium.org/chromedriver/downloads).  You’ll also need a to have selenium installed which can be done though the command-line via pip: pip install selenium
+This is test was written in python 3.6 so you'll need 3.6 or above to run the file.
+
+To run the file simple cd into the directory with the file and the chromedriver and in the command line run: "python main.py" and it should launch an automated chrome browser and run the test (hopefully).
+
+The link to the public git repo is: https://github.com/shah095/Testing
